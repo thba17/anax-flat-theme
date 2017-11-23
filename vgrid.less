@@ -1,0 +1,95 @@
+/*
+ * Grid based layout
+ */
+
+// Gríd layout
+//@import url(grid-flex.less);
+//@import url(grid-float.less);
+@import url(grid-helpers.less);
+@import url(grid.less);
+@magicNumber: 24px;
+
+// Default grid is 12 columns, below three lines will change to 24.
+// Comment out to revert to 12.
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+
+body {
+//    background-color: pink;
+}
+
+.outer-wrap-header {
+    //background: #1a212b;
+}
+
+.inner-wrap {
+    @gridWidth: 900px;
+    @gridImage: "../img/grid/grid950x24x30x10-nomargin.png";
+    //@gridImage: "../img/grid/grid940x12x60x20-nomargin.png";
+
+    .grid(@gridWidth);
+    html.vgrid & {
+        .showGrid(@gridWidth, @gridImage);
+    }
+
+    //&.inner-wrap-footer,
+    &.inner-wrap-header {
+        @gridWidth: 100%;
+        .grid(@gridWidth);
+        html.vgrid & {
+            .showGrid(@gridWidth, @gridImage);
+        }
+    }
+}
+
+.row {
+    .row();
+}
+
+.outer-wrap-header,
+.outer-wrap-main,
+.footer-column-wrapper {
+    margin-bottom: @magicNumber;
+}
+
+.footer-column-wrapper {
+    .clearfix();
+}
+
+.logo-1 {
+    position: absolute;
+    left: 100px;
+    top: 140px;
+}
+
+.site-logo-text {
+    .column(@columns / 4);
+}
+
+.navbar2 {
+    .column(@columns / 4 * 3);
+}
+
+.profile {
+    display: none;
+}
+
+.main {
+    .column(@columns);
+}
+
+.outer-wrap-footer {
+    //background-color: #1a212b;
+    padding: 16px 0;
+}
+
+.footer-column {
+    //color: #ccc;
+    .column(@columns / 3);
+}
+
+.site-footer {
+    .column(@columns);
+    text-align: center;
+}
