@@ -12,6 +12,11 @@
 @gutterWidth:   10;
 @columns:       24;
 
+body {
+    background-color: @bodyBgColor;
+}
+
+
 .outer-wrap-header {
     // background: #1a212b;
 }
@@ -69,28 +74,30 @@
 .footer-column-wrapper {
     .clearfix();
     .column(@columns);
-    border: 1px dotted grey;
+    border: @footerColumnBorder;
 }
 
 .logo-1 {
     position: absolute;
     left: 100px;
-    top: 140px;
+    top: -140px;
 }
 
 .site-logo-text {
     .column(@columns / 6);
     font-size: 2em;
     a {
-        color: #1a1a1a;
+        //color: #1a1a1a;
+        color: @siteLogoTextColor;
         text-decoration: none;
     }
 }
 
 .navbar2 {
     .column(@columns / 3 * 2);
-    background-color: #1a212b;
-    color: #fff;
+    // background-color: #1a212b;
+    background-color: @navbarItemBgColor;
+    color: @navbarTextColor;
 
 }
 
@@ -104,11 +111,16 @@
 }
 
 .main {
+    background-color: @mainBgColor;
     .column(@columns);
 
     &.has-sidebar {
         .column(@columns / 4 * 3);
     }
+}
+
+.article {
+    padding: 0 1em;
 }
 
 .breadcrumb-wrap {
@@ -158,16 +170,27 @@
     .column(@columns / 3 * 4);
 }
 
+.web-sites-color-table {
+    background-color: #fff;
+    border-spacing: 4px;
+    border-collapse: separate;
+    & td {
+        height: 50px;
+        width: 50px;
+        border: 1px dotted black;
+    }
+}
+
 .byline {
     font-size: 75%;
 }
 
 .outer-wrap-footer {
-    background-color: #1a212b;
+    background-color: @footerBgColor;
     // padding: 16px 0;
-    color: #fff;
+    color: @footerTextColor;
     & a {
-        color: #ccc;
+        color: @footerAchorColor;
     }
 }
 

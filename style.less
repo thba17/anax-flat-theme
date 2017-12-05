@@ -1,52 +1,14 @@
 /**
 * Anax Flat theme.
 */
-@import url(modules.less);
+@import url(base.less);
 
-
-
-/** --------------------------------------------------------------
- *  Logo images
- */
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
-}
-
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
-    }
-}
-
-/** --------------------------------------------------------------
- *  Responsive
- */
-@media screen and (max-width: 900px) {
-    .profile {
-        width: 10%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .footer-column {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    .navbar2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    h1 {
-        display: none;
-    }
-
-    body {
-        font-size: x-small;
+@navbarItemBgColor: #1a212b;
+@navbarTextColor: #fff;
+@footerBgColor: #1a212b;
+.footer {
+    color: #fff;
+    & a {
+        color: #ccc;
     }
 }
