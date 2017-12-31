@@ -94,8 +94,7 @@ body {
 }
 
 .navbar2 {
-    .column(@columns / 3 * 2);
-    // background-color: #1a212b;
+    .column(@columns / 4 * 3);
     background-color: @navbarItemBgColor;
     color: @navbarTextColor;
 
@@ -161,6 +160,10 @@ body {
     .column(@columns / 4);
 }
 
+.block.blog-toc {
+    .column(5);
+}
+
 .route-grid .sidebar {
     .column(@columns / 6);
     .push(2);
@@ -190,7 +193,7 @@ body {
     // padding: 16px 0;
     color: @footerTextColor;
     & a {
-        color: @footerAchorColor;
+        color: @footerAnchorColor;
     }
 }
 
