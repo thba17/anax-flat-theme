@@ -1,0 +1,111 @@
+/**
+* Anax Flat theme.
+*/
+@import url(modules.less);
+
+@bodyBgColor: #fff;
+@siteLogoTextColor: #000;
+/*@navbarItemBgColor: #096;*/
+@navbarItemBgColor: #fff;
+@navbarTextColor: #000;
+@mainBgColor: #fff;
+@footerBgColor: #fff;
+@footerAnchorColor: #000;
+@footerTextColor: #000;
+@footerColumnBorder: 1px dotted grey;
+// @fontSizeH1: 2.375em;
+// @fontSizeH2: 1.875em;
+// @fontSizeH3: 1.375em;
+// @fontSizeH4: 1.25em;
+// @fontSizeH5: 1em;
+// @fontSizeH6: 0.875em;
+//
+// @fontSizeCodeInline:  1.25em;
+// @fontSizeCodeBlock:   1.25em;
+// @lineHeightCodeBlock: 1.6;
+//
+// @fontSizeSupSub: 0.75em;
+// @fontSizeSmall: 0.875em;
+//
+// // Monospace
+// @fontFamilyCourier:         "Courier New", Courier, monospace;
+// @fontFamilyMonospace:       monospace;
+//
+// // Serif
+// @fontFamilyCambria:         Cambria, Georgia, Times, 'Times New Roman', serif;
+// @fontFamilyTimes:           Times, 'Times New Roman', serif;
+// @fontFamilyGaramond:        Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+//
+// // Sans-serif
+// @fontFamilyHelvetica:       Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+// @fontFamilyCalibri:         Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+// @fontFamilyMyriadPro:       MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+// @fontFamilyHelveticaNeue:   "Helvetica Neue", Helvetica, Arial, sans-serif;
+// @fontFamilyArial:           Arial, sans-serif;
+//
+// /**
+//  * Default font-families
+//  */
+// @fontFamilyHeadings:  @fontFamilyCambria;
+// @fontFamilyHeadings:  @fontFamilyHelveticaNeue;
+// @fontFamilyHeadings:  @fontFamilyMyriadPro;
+// @fontFamilyBody:      @fontFamilyCalibri;
+// @fontFamilyBody:      @fontFamilyGaramond;
+// @fontFamilyCode:      @fontFamilyCourier;
+//
+// @colorH1BorderBottom: #666;
+// @colorH2BorderBottom: #999;
+// @borderSizeH1: 1px;
+// @borderSizeH2: 1px;
+
+.route-images hr {
+    clear: both;
+}
+
+
+/** --------------------------------------------------------------
+ *  Logo images
+ */
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+    // left: 140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
+}
+
+/** --------------------------------------------------------------
+ *  Responsive
+ */
+@media screen and (max-width: 900px) {
+    .profile {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .navbar2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        display: none;
+    }
+
+    body {
+        font-size: x-small;
+    }
+}

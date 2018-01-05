@@ -1,0 +1,42 @@
+/**
+* Design principles version 1.
+*
+*/
+@import url(base.less);
+@fontFamilyHeadings: 'Merriweather', serif;
+@fontFamilyBody: 'Nunito Sans', sans-serif;
+
+body {
+    background: linear-gradient(to right,  #FFF 0%,#FFF 50%,#000 50%,#000 100%);
+}
+
+.outer-wrap-header {
+    background-color: #FFF;
+}
+
+.inner-wrap-main {
+    // background-color: #EEE;
+    background-color: #000;
+}
+
+// section.blog-list-item:nth-child(1) > h1:nth-child(2) {
+section.blog-list-item {
+    background-color: #000;
+    color: #FFF;
+    & a {
+        color: #FFF;
+        border-bottom: #FFF;
+    }
+}
+.block.blog-toc, .block.toc {
+    color: #FFF;
+    & a {
+        color: #FFF;
+    }
+}
+a {
+    color: #000;
+}
+@footerBgColor: #000;
+@footerTextColor: #FFF;
+@footerAnchorColor: #EEE;

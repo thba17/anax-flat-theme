@@ -1,0 +1,61 @@
+/**
+* Design elements version 2.
+*
+* låta innehållet sträcka sig över hela webbläsarens bredd.
+* bygga på bakgrundsfärger med gradients i flera av sidans regioner.
+* Använd genomskinliga element, opacity, så att bakgrunden, vid behov, lyser igenom (lagom mycket).
+* streck (variationer av borders) för att lyfta fram designen.
+*/
+@import url(base.less);
+
+body {
+    box-sizing: border-box;
+}
+
+.profile {
+    color: #fff;
+}
+
+.navbar2 {
+    opacity: 0.6;
+    }
+
+.inner-wrap-main {
+    max-width: 100%;
+}
+
+.outer-wrap-header {
+    box-sizing: border-box;
+    border-bottom: double;
+    background: linear-gradient(to right, #06FCFB 0%, #414E44 100%);
+}
+
+.outer-wrap-flash {
+    // background-color: #1a212b;
+    background: linear-gradient(to left, #06FCFB 0%, #414E44 100%);
+}
+
+.outer-wrap-breadcrumb {
+    // background-color: #0087CB;
+    // background: linear-gradient(to right, #e9d0af 0%, #faf3eb 100%);
+    background: linear-gradient(to right, #06FCFB 0%, #414E44 100%);
+    // color: #FFF;
+}
+
+.toc {
+    background: linear-gradient(to right, #06FCFB 0%, #414E44 100%);
+    box-sizing: border-box;
+    border-style: ridge;
+    & a {
+        color: #000;
+    }
+}
+
+.outer-wrap-footer {
+    background-color: #1a212b;
+    box-sizing: border-box;
+    border-top: double;
+}
+
+@footerAnchorColor: #fff;
+@footerTextColor: #eee;
